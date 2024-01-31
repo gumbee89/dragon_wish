@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <title>코딩으로 용신에게 소원 보내기</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/monthlycoding/2309_moonwish/wish.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <script
+    src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/monthlycoding/2309_moonwish/wish.js"></script>
+
+  <style>
+    body {
+      /* 배경 이미지 설정 */
+      background-image: url('dark_cloudy_night.png');
+
+      /* 배경 이미지가 전체 화면을 채우도록 설정 */
+      background-size: cover;
+
+      /* 배경 이미지가 페이지와 함께 스크롤되지 않도록 설정 */
+      background-attachment: fixed;
+
+      /* 배경 이미지가 중앙에 위치하도록 설정 */
+      background-position: center center;
+
+      /* 배경 이미지 반복 방지 */
+      background-repeat: no-repeat;
+    }
+
+
+    .front {
+      background-image: url('dragongod.jpeg');
+    }
+
+    .back {
+      background-image: url('dragonball.jpeg');
+    }
+
+    .dragonball {
+      color: yellow;
+      font-size: 20px;
+      background-color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- 클래스 이름 채우기 : 전체 뼈대 감싸기 -->
+  <div class="wrap">
+    <!-- 클래스 이름 채우기 : 양끝 세로 정렬 -->
+    <div class="item-between">
+      <h1>용신에게 소원 빌기</h1>
+      <!-- 클래스 이름 채우기 : 가운데 세로 정렬 -->
+      <div id="subtitles" class="item-center">
+        <div>드래곤볼을 모아 용신에게 소원을 빌어보세요</div>
+        <div class="dragonball">찾아라 드래곤볼~🐉⍟</div>
+      </div>
+      <!-- 클래스 이름 채우기 : 달 외부 뼈대 -->
+      <div class="moon">
+        <!-- 클래스 이름 채우기 : 달 이미지 -->
+        <div class="front"></div>
+        <!-- 클래스 이름 채우기 : 얼굴 이미지 -->
+        <div class="back"></div>
+      </div>
+      <!-- 클래스 이름 채우기 : 가운데 세로 정렬 -->
+      <div class="item-center">
+        <button id="hub-link" target="_blank">용신에게 빈 소원들
+          보러가기</button>
+        <!-- 클래스 이름 채우기 : 가로 정렬 -->
+        <div id="msg-form" class="item-row">
+          <!-- 클래스 이름 채우기 : 입력 공간 -->
+          <input id="nickname" type="text" class="submit-input" style="width: 4rem; margin-right: 0.5rem;"
+            placeholder="닉네임" required>
+          <!-- 클래스 이름 채우기 : 소원빌기 버튼 -->
+          <button id="submit-btn" class="submit-btn" onclick="sendMessage()">소원빌기</button>
+        </div>
+        <div>
+          <!-- 클래스 이름 채우기 : 입력 공간 -->
+          <textarea id="message" type="text" class="submit-input" placeholder="소원을 용신에게 보내주세요" required></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 클래스 이름 채우기 : 편지 -->
+  <div class="letter"></div>
+
+
+
+</body>
+
+</html>
